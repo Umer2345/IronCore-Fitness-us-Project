@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Web Page</title>
+
+</head>
+<body>
+  <section>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="">Fitness</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="maq.html">About</a>
+          <a href="max.html">Services</a>
+          <a href="man.html">Admissions</a>
+          <a href="mad.html">Blog</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="contentBx">
+        <h2>Your Fitness Journey<br> Starts Here</h2>
+        <p>
+          Every champion was once a beginner — and your journey starts the moment you decide to show up. At GrindZone Fitness, we don’t just train bodies — we build confidence, discipline, and strength from the inside out. Whether you're lifting your first weight or chasing your next goal, we’re here to support, guide, and push you to your personal best. This is more than just a gym — this is where transformation begins.
+        </p>
+
+        <ul class="sci">
+          <li>
+            <a href="https://www.instagram.com/tbh_umer29">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="my-footer">
+    <p>Made with ❤️ by Umer Maqsood</p>
+    <p>© 2025 All rights reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+<style>
+    /* ===== General Body ===== */
+    body {
+      background: url(https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg) no-repeat center/cover fixed;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 100px; /* navbar ke neeche jagah */
+      color: whitesmoke;
+       height: 100%; /* page ki poori height use karo */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+      
+    }
+
+    section {
+      padding: 40px;
+      flex: 1;
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo a{
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: whitesmoke;
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin-right: 0px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: whitesmoke;
+    }
+
+    /* ===== Mobile Menu ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 40%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transform: translateY(-100%);
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .nav-links.show {
+        transform: translateY(0);
+      }
+
+      .nav-links a {
+        font-size: 22px;
+      }
+
+      .hamburger {
+        display: block;
+        z-index: 1100;
+      }
+    }
+
+    /* ===== Content ===== */
+    .content {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .content h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+      max-width: 700px;
+    }
+
+    .sci{
+      position: relative;
+      bottom: 10px;
+      display: flex;
+    }
+    .sci li{
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .sci a{
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      filter: invert(1);
+      transform: scale(0.5);
+    }
+
+    /* ===== Footer ===== */
+    .my-footer {
+      background: rgba(0,0,0,0.6);
+      padding: 15px 20px;
+      border-radius: 0px;
+      text-align: center;
+      color: whitesmoke;
+       width: 100%;        /* ✅ full width */
+  margin: 0;
+      font-size: 14px;
+      margin: 40px auto;
+      width: fit-content; 
+    }
+  </style>
+</html>

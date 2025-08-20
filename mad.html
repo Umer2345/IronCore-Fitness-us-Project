@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Web Page</title>
+  </head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <nav>
+      <div class="logo"><a href="#">Fitness</a></div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="maq.html">About</a>
+        <a href="max.html">Services</a>
+        <a href="man.html">Admissions</a>
+        <a href="mad.html">Blog</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Content -->
+  <section>
+    <div class="head">
+      <h1>🔥 “Fuel Your Mind. Flex Your Knowledge.”</h1>
+      <p>Welcome to our fitness blog — your go-to space for workout tips, nutrition guides, gym motivation, transformation stories...</p>
+    </div>
+    <div class="main-list">
+    <details>
+      <summary>🏋️ Workouts</summary>
+      <p>
+        Build muscle. Burn fat. Boost strength.</p>
+        <ul>
+          <li>✅ Beginner workouts</li>
+          <li>🔁 Split training plans</li>
+          <li>⏱️ Quick 20-minute workouts</li>
+          <li>🧠 Form & technique guides</li>
+          <li>💪 Strength-building challenges</li>
+        </ul>
+      
+    </details>
+
+    <details>
+      <summary>🍎 Nutrition</summary>
+      <p>
+        Eat to fuel. Not just to fill.</p>
+        <ul>
+          <li>🥗 Balanced meal plans</li>
+          <li>🥤 Pre- and post-workout meals</li>
+          <li>💧 Hydration tips</li>
+          <li>🧠 Supplements explained</li>
+          <li>🍽️ Real food vs. processed food</li>
+        </ul>
+    </details>
+    <details>
+    <summary>🧠 Motivations</summary>
+     <p>Discipline builds the body. Motivation fuels the mindset. Tap into the mental strength that keeps your goals alive:</p>
+      <ul> 
+        <li>🔥 No-excuse mindset tips — Push through laziness and self-doubt</li>
+         <li>🕰️ How to stay consistent — Even when life gets busy</li> <li>🎧 Music, quotes, and rituals — Find what fires you up every day</li> <li>💬 Stories of comebacks — From failure to fitness</li> 
+         <li>🧘 Mental recovery — Rest isn’t weakness, it’s strategy</li>
+       </ul>
+   </details> 
+   <details> 
+    <summary>💬 Real Stories</summary>
+     <p>True transformation goes beyond the mirror. Get inspired by people who turned struggle into strength:</p>
+      <ul> 
+        <li>🙌 Member journeys — Real people, real progress, real results</li> 
+        <li>📉 From overweight to unstoppable — Stories that break limits</li>
+         <li>💪 Skinny to strong — Confidence gained rep by rep</li> 
+         <li>🧠 Mental battles won — How fitness changed lives inside and out</li> 
+         <li>🤝 Trainer tips & success stories — Wisdom from those who lived it</li>
+       </ul>
+   </details> 
+   <details> 
+    <summary>🎯 Fitness Myths Busted</summary>
+     <p>Forget the fake rules. Let’s talk real results. This section clears the confusion and exposes the truth behind common gym myths:</p>
+      <ul> <li>❌ “Lifting makes you bulky” — Only if you eat and train like a bodybuilder</li>
+       <li>🥗 “You must diet to lose fat” — It’s about consistency, not starvation</li> 
+       <li>⏱️ “More hours = more gains” — Quality > Quantity</li> 
+       <li>🏃‍♂️ “Cardio is the only way to burn fat” — Lifting burns too — even after you're done</li>
+        <li>📆 “You need to train every day” — Recovery builds muscle, not just reps</li>
+      </ul>
+    </details>
+  </div>
+
+    <!-- ✅ Social Icons -->
+    <ul class="sci">
+      <li><a href="https://www.instagram.com/tbh_umer29"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a></li>
+    </ul>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="my-footer">
+    <p>Made with ❤️ by Umer Maqsood</p>
+    <p>© 2025 All rights reserved</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+  <style>
+    /* ==================== GLOBAL STYLES ==================== */
+    body {
+      background: url(https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg);
+      background-size: cover;         /* full screen image */
+      background-repeat: no-repeat;   /* no repeat */
+      background-position: center;    /* center align */
+      background-attachment: fixed;   /* fixed while scrolling */
+      min-height: 100vh;              /* full height */
+      margin: 0;
+      padding: 120px 20px 50px;       /* top padding for navbar space */
+      color: whitesmoke;
+    }
+
+    section {
+      padding: 40px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  flex: 1; /* navbar/footer ke beech jitni bachi space le lega */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center */
+  align-items: center;     /* horizontally center */
+  text-align: center;      /* text center */
+  padding: 20px;
+}
+
+    /* ==================== HEADER + NAVBAR ==================== */
+    header {
+      position: fixed;          /* fixed on top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo a {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: whitesmoke;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+
+    .hamburger {
+      display: none;        /* hidden on desktop */
+      font-size: 28px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: whitesmoke;
+    }
+
+    /* ==================== HEAD SECTION ==================== */
+    .head {
+      max-width: 700px;
+      margin-top: 40px;
+     
+    }
+
+    .head h1 {
+      font-size: 50px;
+    
+    }
+
+    .head p {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    /* ==================== DETAILS SECTION ==================== */
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      font-size: 30px;
+      font-family: Arial;
+    }
+
+    summary:hover {
+      color: green;
+      transition: 0.5s;
+    }
+    details ul {
+  margin: 12px 0 20px 20px;
+  padding: 0;
+  list-style: none;       /* normal bullet hata diye */
+  text-align: left;       /* sab left align */
+  line-height: 1.8;       /* neeche neeche thoda gap */
+}
+
+details li {
+  margin-bottom: 8px;     /* har item ke beech space */
+  font-size: 18px;        /* thoda bada text */
+}
+
+
+    details p {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    .main-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  line-height: 2;       /* neeche neeche gap */
+  text-align: left;     /* sab left align */
+}
+
+.main-list li {
+  margin-bottom: 8px;
+}
+    ul {
+      font-size: 18px;
+    }
+
+    /* ==================== SOCIAL ICONS ==================== */
+    .sci{
+      position: relative;
+      bottom: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px ;
+    }
+    .sci li{
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .sci a{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      filter: invert(1);
+      transform: scale(0.5);
+    }
+    .sci img {
+  width: 40px;   /* ya jo size chahiye */
+  height: 40px;
+}
+
+    /* ==================== FOOTER ==================== */
+    .my-footer {
+       background: rgba(0,0,0,0.6);
+      padding: 15px 20px;
+      width: 100%;        /* ✅ full width */
+  margin: 0; 
+      border-radius: 0px;
+      text-align: center;
+      color: whitesmoke;
+      font-size: 14px;
+      margin: 40px auto;
+      width: fit-content; 
+    }
+
+    /* ==================== MEDIA QUERIES ==================== */
+    @media (max-width: 1024px) {
+      .head h1 {
+        font-size: 45px;     /* smaller heading */
+      }
+      .head p {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 40%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transform: translateY(-100%);
+        transition: transform 0.7s ease-in-out;
+      }
+
+      .nav-links a {
+        font-size: 22px;
+      }
+
+      .nav-links.show {
+        transform: translateY(0);
+      }
+
+      .hamburger {
+        display: block;  /* show hamburger on mobile */
+        z-index: 1100;
+      }
+
+      .head h1 {
+        font-size: 35px;
+      }
+
+      .head p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo a {
+        font-size: 28px;
+      }
+
+      .head h1 {
+        font-size: 28px;
+      }
+
+      .head p {
+        font-size: 14px;
+      }
+
+      summary {
+        font-size: 22px;
+      }
+
+      details p {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+</html>

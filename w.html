@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - IronCore Fitness</title>
+</head>
+<body>
+  <div class="container">
+    <h1>💪 Join Today!</h1>
+    <p>Fill in the details below and take the first step toward a stronger, healthier you.</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      
+      <select name="plan" required>
+        <option value="" disabled selected>Select Plan</option>
+        <option value="basic">Basic (1 Month)</option>
+        <option value="standard">Standard (3 Months)</option>
+        <option value="premium">Premium (6 Months)</option>
+      </select>
+
+      <textarea name="message" rows="4" placeholder="Your Fitness Goals... (Optional)"></textarea>
+      
+      <button type="submit">Join Now</button>
+    </form>
+  </div>
+
+  <footer class="my-footer">
+    <p>Made with ❤️ by Umer Maqsood</p>
+    <p>© 2025 All rights reserved</p>
+  </footer>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  input, select, textarea {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white; /* ✅ This line added to fix text visibility */
+  }
+
+  button {
+    background: linear-gradient(to right, black, grey);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background: darkgrey;
+  }
+
+  .my-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  font-size: 14px;
+  max-width: 400px;
+  margin: 100px auto 0; /* Top margin + horizontal centering */
+}
+
+ 
+</style>
+
+</html>

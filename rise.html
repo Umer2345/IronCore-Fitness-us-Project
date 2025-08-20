@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enroll Now – Get Started</title>
+  <style>
+    body {
+      background: url('https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: whitesmoke;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      max-width: 600px;
+      margin: 150px auto;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+     color: white;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input,
+    select {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    option {
+      background-color: black;
+      color: white;
+    }
+
+    button {
+      background: linear-gradient(to right, black, grey);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+   .my-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  font-size: 14px;
+  max-width: 400px;
+  margin: 100px auto 0; /* Top margin + horizontal centering */
+}
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Ready to Change Your Life?</h1>
+    <p>Let our expert trainers help you achieve your fitness goals – one workout at a time.</p>
+    <form>
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Create a Strong Password" required>
+
+      <select name="goal" required>
+        <option value="" disabled selected>Select Your Primary Goal</option>
+        <option value="lose">Lose Weight</option>
+        <option value="muscle">Build Muscle</option>
+        <option value="tone">Tone Body</option>
+        <option value="health">Stay Healthy</option>
+      </select>
+
+      <button type="submit">Get Started Now</button>
+    </form>
+  </div>
+  <footer class="my-footer">
+    <p>Made with ❤️ by Umer Maqsood</p>
+    <p>© 2025 All rights reserved</p>
+  </footer>
+</body>
+</html>

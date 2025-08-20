@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gym Web Page</title>
+</head>
+<body>
+  <section>
+   <header>
+  <nav>
+    <div class="logo">
+      <a href="">Fitness</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="maq.html">About</a>
+      <a href="max.html">Services</a>
+      <a href="add.html">Admissions</a>
+      <a href="mad.html">Blog</a>
+    </div>
+  </nav>
+</header>
+
+    <div class="content">
+      <div class="contentBx">
+        <h2>Build Perfect Body<br>
+        with Clean Mind</h2>
+      <p>
+  Welcome to <strong>IronCore Fitness</strong> — where strength meets dedication. <br>
+  Our state-of-the-art facility offers top-tier equipment, certified trainers, and a motivating environment for every fitness level. <br>
+  Whether you're building muscle, losing weight, or just staying active, we’re here to help you achieve your goals. <br>
+  Join us today and become the strongest version of yourself!
+</p>
+<ul class="sci">
+  <li><a href="https://www.instagram.com/tbh_umer29"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40">
+</a></a></li>
+  <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40">
+</a></li></ul></div>
+  </section>
+  <footer class="my-footer">
+  <p>Made with ❤️ by Umer Maqsood</p>
+  <p>© 2025 All rights reserved</p>
+</footer>
+</a></li></ul>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+</body>
+<style>
+         body {
+  background: url(https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg);
+  background-size: cover; /* Fixes white corners */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 100px;
+  color: whitesmoke;
+   padding-top: 100px; 
+    height: 100%; /* page ki poori height use karo */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+  section{
+    padding: 40px;
+    flex: 1;
+  }
+ body {
+      background: url(https://t3.ftcdn.net/jpg/05/79/96/42/360_F_579964274_IXfgpEBUCGcCwbOcvK4PWGJXkHwlmPT7.jpg) no-repeat center/cover fixed;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 100px; 
+      color: whitesmoke;
+    }
+
+    /* Navbar Base */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo a{
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      margin-right: 0px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+
+    }
+
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+
+    /* Hamburger Button */
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: whitesmoke;
+    }
+
+    /* Mobile Menu */
+    /* Mobile Menu */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed; /* full screen */
+    top: 0;
+    left: 0;
+    height: 40%;   /* full height */
+    width: 100%;    /* full width */
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateY(-100%); /* hidden initially */
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .nav-links.show {
+    transform: translateY(0); /* slide down full screen */
+  }
+
+  .nav-links a {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1100; /* stays above the menu */
+    position: relative;
+  }
+}
+
+
+
+     .content {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .content h2 {
+      font-size: 60px;
+    }
+
+    .content p {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    .my-footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: whitesmoke;
+      font-size: 14px;
+      margin-top: 100px;
+    }
+  header .navigation a:hover{
+    color: red;
+  }
+  .content{
+    max-width: 700px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+    .content .contentBx h2{
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    }
+    .content .contentBx p{
+    font-size: 20px;
+    margin-left: 110px;
+    color: whitesmoke;
+    text-align: center;
+    text-align: justify;
+    }
+    .content .contentBx a{
+      display: inline-block;
+      padding: 10px 30px;
+      background: light grey;
+      letter-spacing: 1px;
+      font-weight: 500;
+      letter text-decoration: none;
+      color: white;
+
+    }
+    .sci{
+      position: relative;
+      bottom: 10px;
+      display: flex;
+     justify-content: center;
+      gap: 30px;
+    }
+    .sci li{
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .sci a{
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      filter: invert(1);
+      transform: scale(0.5);
+    }
+.my-footer {
+ background: rgba(0,0,0,0.6);
+      padding: 15px 20px;
+      border-radius: 0px;
+      text-align: center;
+      color: whitesmoke;
+       width: 100%;        /* ✅ full width */
+  margin: 0;
+      font-size: 14px;
+      margin: 40px auto;
+      width: fit-content; 
+    }
+
+}
+  @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+      }
+
+      .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+
+      .navigation li a {
+        margin: 5px 0;
+        font-size: 18px;
+      }
+
+      .content h2 {
+        font-size: 500px;
+      }
+
+      .content p {
+        font-size: 16px;
+      }
+    }
+
+    /* =========================
+   Tablet Styles (≤ 1024px)
+   ========================= */
+@media (max-width: 1024px) {
+  body {
+    padding: 60px;
+  }
+
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  header .navigation li a {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+
+  .content .contentBx h2 {
+    font-size: 48px;
+  }
+
+  .content .contentBx p {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+
+/* =========================
+   Mobile Styles (≤ 768px)
+   ========================= */
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+  body {
+    padding-top: 160px; /* mobile header bada hota hai */
+  }
+
+  header .navigation li a {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+
+  .content .contentBx h2 {
+    font-size: 28px;
+  }
+
+  .content .contentBx p {
+    font-size: 14px;
+  }
+
+  .my-footer {
+    font-size: 12px;
+    padding: 10px;
+
+  }
+}
+  
+</style>
+</html>
