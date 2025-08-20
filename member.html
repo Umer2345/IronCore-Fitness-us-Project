@@ -87,7 +87,7 @@
   <div class="box">
     <h1>Membership Open – Your New Body Awaits</h1>
     <p>From raw potential to elite transformation — this is your commitment to become unstoppable.</p>
-    <form>
+    <form id="joinForm">
       <input type="text" name="name" placeholder="Your Full Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
 
@@ -100,10 +100,23 @@
 
       <button type="submit">Become a Member</button>
     </form>
+   <div id="thankYou" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>✅ Thank you for becoming a Member of IronCore Fitness!</h2>
+      <p>We’ll contact you soon with more details.</p>
+    </div>
   </div>
+</div>
   <footer class="my-footer">
     <p>Made with ❤️ by Umer Maqsood</p>
     <p>© 2025 All rights reserved</p>
   </footer>
+  <script>
+    // JavaScript: show thank you message instead of new page
+    document.getElementById("joinForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // stop default page reload
+      this.style.display = "none"; // hide form
+      document.getElementById("thankYou").style.display = "block"; // show message
+    });
+  </script>
 </body>
 </html>
