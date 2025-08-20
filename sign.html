@@ -9,7 +9,7 @@
   <div class="box">
     <h1>Sign Up Today – Create Your Fitness Account</h1>
     <p>Fill in the details below and take the first step to get a free trial, and become healthier, stronger.</p>
-    <form>
+    <form id="joinform">
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="password" name="confirm password" placeholder="Password" required>
@@ -29,7 +29,13 @@
       </select>
       <button type="submit">Sign Up</button>
     </form>
+   <div id="thankYou" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>✅ Thank you for signing up with IronCore Fitness!</h2>
+      <p>We’ll contact you soon with more details.</p>
+    </div>
   </div>
+</div>
+  
    <footer class="my-footer">
     <p>Made with ❤️ by Umer Maqsood</p>
     <p>© 2025 All rights reserved</p>
@@ -111,5 +117,13 @@
   margin: 100px auto 0; /* Top margin + horizontal centering */
 }
 </style>
-
+<script>
+    // JavaScript: show thank you message instead of new page
+    document.getElementById("joinform").addEventListener("submit", function(event) {
+      event.preventDefault(); // stop default page reload
+      this.style.display = "none"; // hide form
+      document.getElementById("thankYou").style.display = "block"; // show message
+    });
+  </script>
 </html>
+
