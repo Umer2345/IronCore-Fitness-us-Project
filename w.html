@@ -10,7 +10,7 @@
     <h1>💪 Join Today!</h1>
     <p>Fill in the details below and take the first step toward a stronger, healthier you.</p>
 
-    <form>
+    <form id="joinform">
       <input type="text" name="name" placeholder="Your Full Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
@@ -26,12 +26,25 @@
       
       <button type="submit">Join Now</button>
     </form>
+  
+ <div id="thankYou" style="display: none; text-align: center; margin-top: 20px;">
+      <h2>✅ Thank you for joining IronCore Fitness!</h2>
+      <p>We’ll contact you soon with more details.</p>
+    </div>
   </div>
-
+  </div>
   <footer class="my-footer">
     <p>Made with ❤️ by Umer Maqsood</p>
     <p>© 2025 All rights reserved</p>
   </footer>
+  <script>
+    // JavaScript: show thank you message instead of new page
+    document.getElementById("joinform").addEventListener("submit", function(event) {
+      event.preventDefault(); // stop default page reload
+      this.style.display = "none"; // hide form
+      document.getElementById("thankYou").style.display = "block"; // show message
+    });
+  </script>
 </body>
 
 <style>
@@ -113,3 +126,4 @@
 </style>
 
 </html>
+
